@@ -1,0 +1,149 @@
+@import "~bootstrap/scss/bootstrap";
+@import "./variable.scss";
+
+
+body{
+  color: $primary-text-color;
+  font-size: 14px;
+}
+.sectionTitle{
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.listCard{
+  border: 0;
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.14);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.05);
+  }
+  .logo{
+    display: block;
+    margin-bottom: 12px;
+    img{
+      width: 50px;
+    }
+  }
+  .cryptoName{
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  .cryptoSymbol{
+    display: block;
+    color: $secondary-text-color;
+  }
+  .currentPrice{
+    h5{
+      margin-bottom: 0;
+    }
+    strong{
+      font-size: 14px;
+      color: $light-text;
+    }
+  }
+  .priceWrapper{
+    .high24Hr, .low24Hr{
+      background-color: $light-bg-color;
+      padding: 3px 10px;
+      border-radius: 6px;
+      span{
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+      }
+      label{
+        font-size: 13px;
+        font-weight: 500;
+        color: $light-text;
+      }
+    }
+  }
+}
+
+.backtoTop{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  button{
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.info{
+  &Wrapper{
+
+  }
+  &Left{
+    margin-right: 10px;
+  }
+  &Right{
+    h3{
+      margin-bottom: 0;
+      font-size: 16px;
+      margin-bottom: 2px;
+      span{
+        color: $secondary-text-color;
+        font-size: 13px;
+      }
+    }
+    small{
+      display: block;
+      color: $secondary-text-color;
+      font-weight: 500;
+    }
+  }
+}
+.marketCap{
+  span, label{
+    display: block;
+  }
+  span{
+    font-weight: 500;
+  }
+  label{
+    color: $light-text;
+  }
+}
+.content{
+  h6{
+    color: $primary-text-color;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  p{
+    color: $light-text;
+  }
+}
+
+.genesisSection{
+  span{
+     display: block;
+     font-size: 13px; 
+  }
+  label{
+    font-weight: 500;
+    color: $light-text;
+  }
+}
+.siteInfo{
+  a{
+    font-size: 13px; 
+  }
+  label{
+    display: block;
+    color: $light-text;
+    font-weight: 500;
+  }
+}
+.loaderContainer{
+  height: 80vh;
+}
+.scrollEnd{
+  border: 1px solid $light-border-color;
+}
